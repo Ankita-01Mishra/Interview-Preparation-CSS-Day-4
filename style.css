@@ -1,0 +1,85 @@
+.text,.button{
+    text-align: center;
+}
+.first{
+    height: 300px;
+    width: 300px;
+    background: url(https://as1.ftcdn.net/v2/jpg/04/35/33/78/1000_F_435337870_kVcUj7qStjUSavC9Q3SdntMfmVh5CDfn.jpg);
+    margin: auto;
+}
+.header{
+    height: 100px;
+    margin-left: 10px;
+    /* background-color: bisque; */
+}
+.header img{
+    width: 50px;
+}
+.btn{
+    margin: 10px;
+    float: right;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    height: 200px;
+    width: 200px;
+    border: 2px solid gray;
+    margin: 10px;
+   
+}
+@media  screen and (max-width:500px) {
+    .cards{
+        flex-direction: column;
+    }
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+.login,.signup{
+    background-color: blue;
+    color: white;
+    height: 50px;
+    width: 100px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+@media  screen and (max-width:500px) and (min-width:480px){
+    .buttons{
+        /* display:block; */
+        flex-direction: column;
+    }
+    .login,.signup{
+        background-color: green;
+
+    }
+}
+@media  screen and (max-width:1024px) and (min-width:500px){
+    .buttons{
+        /* display:block */
+        flex-direction: column;
+    }
+    .login,.signup{
+        background-color: red;
+
+    }
+}
+
+.flexbox{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    
+}
+.flex{
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    /* background-color: bisque; */
+    align-items: center;
+    text-align: center;
+}
